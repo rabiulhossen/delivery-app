@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import  "./App.css";
 import OrderTable from './Ordertable/Ordertable';
 
 const App = () => {
@@ -9,7 +10,7 @@ const App = () => {
   };
 
   return (
-    <div>
+    <div className='root-div'> 
       <div className="tab">
         <button
           className={selectedTab === 'all' ? 'active' : ''}

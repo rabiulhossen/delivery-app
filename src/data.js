@@ -70,6 +70,48 @@ const fakeOrders = [
      deliveryDays: '3 days'
 
    },
+   {
+    id: 16,
+    customerName: 'Alex Doe',
+    deliveryType: 'express',
+    deliveryDays: '3 days'
+
+  },
+  {
+    id: 11,
+    customerName: 'John Doe',
+    deliveryType: 'regular',
+    deliveryDays: '7 days'
+
+  },
+  {
+    id: 12,
+    customerName: 'Jane Smith',
+    deliveryType: 'express',
+    deliveryDays: '3 days'
+  
+  },
+  {
+   id: 13,
+   customerName: 'Ben Stoke',
+   deliveryType: 'regular',
+   deliveryDays: '7 days'
+
+ },
+ {
+   id: 14,
+   customerName: 'John sina',
+   deliveryType: 'regular',
+   deliveryDays: '7 days'
+
+ },
+ {
+   id: 15,
+   customerName: 'Alex Doe',
+   deliveryType: 'express',
+   deliveryDays: '3 days'
+
+ },
     
    ];
    

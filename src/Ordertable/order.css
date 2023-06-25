@@ -1,0 +1,12 @@
+.table{
+     margin: 1rem 2rem;
+     background-color: rgb(4, 32, 92);
+     padding: 1rem 2rem;
+     border: 2px solid green;
+     border-radius: 5px
+}
+
+.header > th{
+     font-weight: 800;
+     padding: 1rem 2em;
+}

@@ -1,13 +1,14 @@
-
+import "./order.css"
 import Pagination from './pagination';
-import { getOrders } from '../data'; // Assume a function to fetch orders from an API
+import { getOrders } from '../data'; 
+import "./order.css"
 import { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 
 const OrderTable = ({ selectedTab }) => {
   const [orders, setOrders] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const ordersPerPage = 5;
+  const ordersPerPage = 7;
 
   useEffect(() => {
     fetchOrders();
@@ -36,9 +37,9 @@ const OrderTable = ({ selectedTab }) => {
 
   return (
     <div>
-      <table>
+      <table className='table'>
         <thead>
-          <tr>
+          <tr className="header">
             <th>Order ID</th>
             <th>Customer Name</th>
             <th>Delivery Type</th>
