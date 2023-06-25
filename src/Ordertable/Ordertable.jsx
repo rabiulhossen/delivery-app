@@ -7,7 +7,7 @@ import PropTypes from 'prop-types';
 const OrderTable = ({ selectedTab }) => {
   const [orders, setOrders] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const ordersPerPage = 10;
+  const ordersPerPage = 5;
 
   useEffect(() => {
     fetchOrders();
@@ -42,6 +42,8 @@ const OrderTable = ({ selectedTab }) => {
             <th>Order ID</th>
             <th>Customer Name</th>
             <th>Delivery Type</th>
+            <th>Delivery Days</th>
+
             {/* Add more table headers as needed */}
           </tr>
         </thead>
@@ -51,7 +53,9 @@ const OrderTable = ({ selectedTab }) => {
               <td>{order.id}</td>
               <td>{order.customerName}</td>
               <td>{order.deliveryType}</td>
-              {/* Add more table cells with order details as needed */}
+              <td>{order.deliveryDays}</td>
+
+            
             </tr>
           ))}
         </tbody>
